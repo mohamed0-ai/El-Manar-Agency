@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import rateLimit from 'express-rate-limit';
 
-import { initDatabase } from './db/index.js';
+import { initDatabase, dbHelpers } from './db/index.js';
 import { authenticate } from './middleware/auth.js';
 
 import authRoutes from './routes/auth.js';
@@ -27,8 +27,18 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// 1. Initialize Database Schema
+// 1. Initialize Database Schema & Auto-seed on fresh deployments
 initDatabase();
+try {
+  const userCount = dbHelpers.get('SELECT COUNT(*) as count FROM users');
+  if (!userCount || userCount.count === 0) {
+    console.log('[Startup] Fresh database detected. Automatically seeding authentic Al-Manar data...');
+    const { seed } = await import('./db/seed.js');
+    await seed();
+  }
+} catch (e) {
+  console.warn('[Startup] Auto-seed check warning:', e.message);
+}
 
 // 2. Security Middleware
 app.use(helmet({
@@ -62,7 +72,7 @@ app.use('/api/', apiLimiter);
 app.use(authenticate);
 
 // 5. Static uploads directory
-const uploadsDir = path.resolve(__dirname, 'uploads');
+const uploadsDir = process.env.UPLOADS_PATH || path.resolve(__dirname, 'uploads');
 if (!fs.existsSync(uploadsDir)) {
   fs.mkdirSync(uploadsDir, { recursive: true });
 }

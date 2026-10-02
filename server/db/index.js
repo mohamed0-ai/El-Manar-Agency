@@ -6,7 +6,11 @@ import { fileURLToPath } from 'node:url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const dbPath = path.resolve(__dirname, 'almanar.db');
+const dbPath = process.env.DATABASE_PATH || path.resolve(__dirname, 'almanar.db');
+const dbDir = path.dirname(dbPath);
+if (!fs.existsSync(dbDir)) {
+  fs.mkdirSync(dbDir, { recursive: true });
+}
 const schemaPath = path.resolve(__dirname, 'schema.sql');
 
 export const db = new DatabaseSync(dbPath);

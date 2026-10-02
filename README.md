@@ -113,3 +113,31 @@ npm start
 ```
 
 Open your browser at: **`http://localhost:5000`**
+
+---
+
+### 7. 🚀 Cloud Deployment (Render / Railway / Docker)
+
+#### Option A: Deploy to Render.com (Recommended)
+1. Go to [Render Dashboard](https://dashboard.render.com/) and click **New +** -> **Blueprint**.
+2. Connect your GitHub repository: `https://github.com/mohamed0-ai/El-Manar-Agency`.
+3. Render will detect `render.yaml` automatically, configure the Docker runner in Frankfurt (lowest latency to Egypt), attach a 5GB persistent storage disk for SQLite and uploads, and deploy your live URL with free SSL (`https://almanar-agency.onrender.com`).
+
+#### Option B: Deploy to Railway.app
+1. Go to [Railway Dashboard](https://railway.app/) and click **New Project** -> **Deploy from GitHub repo**.
+2. Select `mohamed0-ai/El-Manar-Agency`.
+3. In service settings, add a **Volume** mounted at `/app/server/uploads` and set environment variables:
+   * `PORT`: `5000`
+   * `NODE_ENV`: `production`
+   * `JWT_SECRET`: *(any secure random string)*
+4. Railway will build using the included `Dockerfile` and publish your live domain.
+
+#### Option C: Run with Docker Locally or on VPS
+```bash
+# Build Docker image
+docker build -t almanar-platform .
+
+# Run container with persistent data volume
+docker run -d -p 5000:5000 -v almanar_data:/app/server/uploads --name almanar almanar-platform
+```
+

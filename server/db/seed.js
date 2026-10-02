@@ -1,4 +1,6 @@
 import bcrypt from 'bcryptjs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { db, initDatabase, dbHelpers } from './index.js';
 
 export async function seed() {
@@ -808,7 +810,13 @@ export async function seed() {
   console.log('[Seed] Database successfully seeded with authentic Al-Manar catalog and configuration!');
 }
 
-seed().catch(err => {
-  console.error('[Seed Error]:', err);
-  process.exit(1);
-});
+const isDirectCLI = process.argv[1] && (
+  path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url))
+);
+
+if (isDirectCLI) {
+  seed().catch(err => {
+    console.error('[Seed Error]:', err);
+    process.exit(1);
+  });
+}
