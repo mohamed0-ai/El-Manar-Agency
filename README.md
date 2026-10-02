@@ -12,17 +12,17 @@ A hardened, high-performance, full-stack E-Commerce & Service Management Web Pla
 * **Company Name (EN):** Al-Manar Air Conditioning, Water Filters & Commercial Agencies
 * **Headquarters & Showroom:** أسيوط - أول شارع التجنيد من شارع الجمهورية - أمام بنك الإمارات دبي الوطني (Emirates NBD)، مدينة أسيوط، مصر.
 * **Direct Hotlines:**
-  * Primary: `01119461111`
-  * Secondary / Sales: `01114961111`
-  * Emergency HVAC 24/7: `01119641111`
+  * Primary: `00000000`
+  * Secondary / Sales: `00000001`
+  * Emergency HVAC 24/7: `000000000`
 * **Email:** `almanaragencies@gmail.com`
-* **Commercial Registration:** س.ت `92950`
-* **Tax Card:** ب.ض `231-091-057`
+* **Commercial Registration:** س.ت `00000`
+* **Tax Card:** ب.ض `20000000007`
 * **Official Banking Details:**
   * **Bank:** Banque Misr (بنك مصر - فرع أسيوط)
   * **Account Holder:** شركة المنار للتوكيلات التجارية
-  * **Swift Code:** `BMISEGCX140`
-  * **IBAN:** `EG710002057805780001000002280`
+  * **Swift Code:** `000000000`
+  * **IBAN:** `00000000000000000000000000`
 
 ---
 
@@ -54,7 +54,7 @@ A hardened, high-performance, full-stack E-Commerce & Service Management Web Pla
 * **InstaPay Gateway (IPA):**
   * Displays active InstaPay Payment Address (e.g. `almanar@instapay`) with 1-click copy and step-by-step mobile guide.
 * **Vodafone Cash Mobile Wallet:**
-  * Displays active wallet phone numbers (`01119461111`) with USSD dialing instructions (`*9*7*Phone*Amount#`).
+  * Displays active wallet phone numbers (`0000000`) with USSD dialing instructions (`*90000mount#`).
 * **Banque Misr Direct Bank Transfer:**
   * Official IBAN and Swift Code breakdown.
 * **Cash on Delivery (COD):**
@@ -71,11 +71,11 @@ A hardened, high-performance, full-stack E-Commerce & Service Management Web Pla
 
 | Role | Role Code | Privileges & Responsibilities |
 | :--- | :--- | :--- |
-| **Super Admin** | `super_admin` | Full platform ownership: manage user accounts, assign roles, financial analytics, audit logs, configure global store settings (wallets, bank details, hotlines). |
-| **Catalog Manager** | `catalog_manager` | Full CRUD for products, categories, brands, stock quantities, and technical specifications. *Restricted from financials and user management.* |
-| **Sales & Orders Officer** | `sales_officer` | View customer orders, verify InstaPay / Vodafone Cash receipts, approve/reject payment proofs, update fulfillment status (`Processing`, `Shipped`, `Delivered`). |
-| **Maintenance Dispatcher** | `dispatcher` | Manage HVAC installation and maintenance requests, assign field technicians, schedule dates, update job statuses. |
-| **Customer** | `customer` | Browse catalog, use AC calculator, place orders with proof upload, re-upload receipt if rejected, book maintenance requests, print tax invoices. |
+| **Super Admin** | 0 Full platform ownership: manage user accounts, assign roles, financial analytics, audit logs, configure global store settings (wallets, bank details, hotlines). |
+| **Catalog Manager** |0 | Full CRUD for products, categories, brands, stock quantities, and technical specifications. *Restricted from financials and user management.* |
+| **Sales & Orders Officer** | `0| View customer orders, verify InstaPay / Vodafone Cash receipts, approve/reject payment proofs, update fulfillment status (`Processing`, `Shipped`, `Delivered`). |
+| **Maintenance Dispatcher** | 0` | Manage HVAC installation and maintenance requests, assign field technicians, schedule dates, update job statuses. |
+| **Customer** | `0` | Browse catalog, use AC calculator, place orders with proof upload, re-upload receipt if rejected, book maintenance requests, print tax invoices. |
 
 ---
 
@@ -83,11 +83,11 @@ A hardened, high-performance, full-stack E-Commerce & Service Management Web Pla
 
 The system includes a **1-Click Demo Switcher** in the navigation bar and login screen:
 
-* **Super Admin:** `admin@almanar.eg` / `Admin@123456` (Eng. Mahmoud Al-Manar)
-* **Catalog Manager:** `catalog@almanar.eg` / `Catalog@123456` (Tarek Mostafa)
-* **Sales Officer:** `sales@almanar.eg` / `Sales@123456` (Sara Nabil)
-* **Maintenance Dispatcher:** `dispatcher@almanar.eg` / `Dispatch@123456` (Eng. Youssef Kamal)
-* **Customer:** `customer@gmail.com` / `Customer@123456` (Dr. Ahmed Hassan)
+* **Super Admin:** 
+* **Catalog Manager:** `
+* **Sales Officer:** 
+* **Maintenance Dispatcher:** 
+* **Customer:** `
 
 ---
 
