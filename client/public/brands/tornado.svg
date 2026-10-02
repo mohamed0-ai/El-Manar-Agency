@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  <defs>
+    <linearGradient id="torGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E51937"/>
+      <stop offset="100%" stop-color="#1A1A1A"/>
+    </linearGradient>
+  </defs>
+  <!-- Tornado Whirl -->
+  <path d="M 28,26 L 48,26 L 40,33 L 30,33 Z" fill="#E51937"/>
+  <path d="M 31,36 L 45,36 L 39,42 L 33,42 Z" fill="#E51937"/>
+  <path d="M 34,45 L 42,45 L 38,50 L 35,50 Z" fill="#E51937"/>
+  <!-- TORNADO Text -->
+  <text x="54" y="49" font-family="'Arial Black', sans-serif" font-size="34" font-weight="900" font-style="italic" fill="#1A1A1A" letter-spacing="1">TORNADO</text>
+  <text x="135" y="64" font-family="Arial, sans-serif" font-size="7.5" font-weight="bold" fill="#777777" text-anchor="middle" letter-spacing="2">BY ELARABY</text>
+</svg>

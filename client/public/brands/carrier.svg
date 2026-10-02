@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  <defs>
+    <linearGradient id="carrierGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#003580"/>
+      <stop offset="100%" stop-color="#0056b3"/>
+    </linearGradient>
+  </defs>
+  <!-- Carrier Oval -->
+  <ellipse cx="120" cy="40" rx="112" ry="36" fill="url(#carrierGrad)"/>
+  <ellipse cx="120" cy="40" rx="106" ry="31" fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  <!-- Carrier Text -->
+  <text x="120" y="47" font-family="'Brush Script MT', 'Segoe Script', cursive, sans-serif" font-size="34" font-weight="bold" font-style="italic" fill="#ffffff" text-anchor="middle" letter-spacing="1">Carrier</text>
+  <text x="120" y="62" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#7cc2ff" text-anchor="middle" letter-spacing="2">AIR CONDITIONING</text>
+</svg>

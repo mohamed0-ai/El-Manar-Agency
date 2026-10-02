@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  <defs>
+    <linearGradient id="samsungBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#034EA2"/>
+      <stop offset="100%" stop-color="#0066CC"/>
+    </linearGradient>
+  </defs>
+  <!-- Ellipse Accent -->
+  <ellipse cx="120" cy="40" rx="100" ry="32" fill="none" stroke="#034EA2" stroke-width="2" transform="rotate(-6, 120, 40)"/>
+  <!-- SAMSUNG Text -->
+  <text x="120" y="49" font-family="'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="900" fill="url(#samsungBlue)" text-anchor="middle" letter-spacing="4">SAMSUNG</text>
+  <text x="120" y="62" font-family="Arial, sans-serif" font-size="7.5" font-weight="bold" fill="#666666" text-anchor="middle" letter-spacing="2">SMART APPLIANCES & DISPLAYS</text>
+</svg>

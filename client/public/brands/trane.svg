@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  <defs>
+    <linearGradient id="traneRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E31B23"/>
+      <stop offset="100%" stop-color="#FF4B3A"/>
+    </linearGradient>
+  </defs>
+  <!-- Circle Icon -->
+  <circle cx="42" cy="40" r="16" fill="url(#traneRed)"/>
+  <circle cx="42" cy="40" r="8" fill="#ffffff"/>
+  <!-- TRANE Typography -->
+  <text x="70" y="51" font-family="'Arial Black', sans-serif" font-size="38" font-weight="900" fill="#222222" letter-spacing="2">TRANE</text>
+  <text x="135" y="66" font-family="Arial, sans-serif" font-size="7.5" font-weight="bold" fill="#E31B23" text-anchor="middle" letter-spacing="2.5">COMMERCIAL & VRF HVAC</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  <defs>
+    <linearGradient id="yorkBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#003B71"/>
+      <stop offset="100%" stop-color="#0066B2"/>
+    </linearGradient>
+  </defs>
+  <!-- York Blue Box -->
+  <rect x="25" y="15" width="60" height="50" rx="8" fill="url(#yorkBlue)"/>
+  <!-- Y Emblem -->
+  <path d="M 37,27 L 46,41 L 46,53 L 52,53 L 52,41 L 61,27 L 54,27 L 49,36 L 44,27 Z" fill="#ffffff"/>
+  <!-- YORK Text -->
+  <text x="96" y="47" font-family="'Arial Black', sans-serif" font-size="34" font-weight="900" fill="#003B71" letter-spacing="2">YORK</text>
+  <text x="97" y="60" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#777777" letter-spacing="1">JOHNSON CONTROLS</text>
+</svg>

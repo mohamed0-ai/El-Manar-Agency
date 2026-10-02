@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  <defs>
+    <linearGradient id="mideaCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0080c6"/>
+      <stop offset="100%" stop-color="#00a3e0"/>
+    </linearGradient>
+  </defs>
+  <!-- Swoosh Icon -->
+  <path d="M 28,48 C 22,25 45,20 54,34 C 44,28 32,32 35,46 Z" fill="#00a3e0"/>
+  <!-- Midea Typography -->
+  <text x="58" y="52" font-family="'Trebuchet MS', 'Arial Rounded MT Bold', sans-serif" font-size="38" font-weight="900" fill="url(#mideaCyan)" letter-spacing="-0.5">Midea</text>
+  <circle cx="58" cy="24" r="3.5" fill="#00a3e0"/>
+</svg>
